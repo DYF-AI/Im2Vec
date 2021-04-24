@@ -130,7 +130,6 @@ class VectorVAEnLayers(VectorVAE):
         rgb = rgb + inv_mask
         return rgb
 
-
     def decode_and_composite(self, z: Tensor, return_overlap_loss=False, **kwargs):
         bs = z.shape[0]
         layers = []
